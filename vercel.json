@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/css/(.*)", "dest": "/css/$1" },
+    { "src": "/cartas", "dest": "/cartas.html" },
+    { "src": "/saldo", "dest": "/saldo.html" },
+    { "src": "/perfil", "dest": "/perfil.html" },
+    { "src": "/regras", "dest": "/regras.html" },
+    { "src": "/ganhadores", "dest": "/ganhadores.html" },
+    { "src": "/", "dest": "/index.html" }
+  ]
+}
